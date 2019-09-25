@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
-// import PhotoCard from "./components/PhotoCard.js";
 import Carousel from "./components/Carousel.js";
 
 function App() {
@@ -20,9 +19,10 @@ function App() {
   const apiKey = "LWqkJeogF0XlRhW24JU14v9sfWMelIH0BS97ldGZ"
 
   useEffect(() => {
-    async function getImage(date) {
+    async function getImage(dateObj) {
+      const dateStr = date.toJSON().slice(0,10);
       try {
-        const apodObj = await axios.get(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${date.toJSON().slice(0,10)}`)
+        const apodObj = await axios.get(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${dateStr}`)
         console.log(apodObj);
         setImage(apodObj.data);
       } catch (err) {
@@ -42,7 +42,8 @@ function App() {
 
   return (
     <div className="App">
-      <Carousel date={date.toJSON().slice(0,10)} title={image.title} src={image.url} key={image.date} explanation={image.explanation} func={changeImage}/>
+      <h1>Astronomy Photo Of The Day</h1>
+      <Carousel image={image} date={date.toJSON().slice(0,10)} func={changeImage}/>
     </div>
   );
 }

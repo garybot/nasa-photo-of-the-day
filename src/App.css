@@ -32,6 +32,17 @@
   }
 }
 
+.btn {
+  margin: 5px;
+  width: 100px;
+  height: 30px;
+  background-color: slategrey;
+  color: ivory;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+}
+
 .img-card {
   width: 80%;
   margin: 0 auto;
