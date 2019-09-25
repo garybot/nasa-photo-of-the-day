@@ -23,7 +23,6 @@ function App() {
       const dateStr = date.toJSON().slice(0,10);
       try {
         const apodObj = await axios.get(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${dateStr}`);
-        console.log(apodObj);
         setImage(apodObj.data);
       } catch (err) {
         console.log(err);
@@ -46,6 +45,7 @@ function App() {
     <div className="App">
       <h1>Astronomy Photo Of The Day</h1>
       <Carousel image={image} date={date.toJSON().slice(0,10)} func={dateHandler}/>
+      <span>Image Copyright: {image.copyright ? image.copyright : "Public Domain"} </span>
     </div>
   );
 }

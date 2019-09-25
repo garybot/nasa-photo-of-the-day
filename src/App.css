@@ -35,11 +35,15 @@
 .btn {
   margin: 5px;
   width: 100px;
-  height: 30px;
+  height: 25px;
   background-color: slategrey;
   color: ivory;
   font-weight: bold;
   border: none;
+  border-radius: 3px;
+}
+
+#date-picker {
   border-radius: 3px;
 }
 
