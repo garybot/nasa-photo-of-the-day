@@ -15,14 +15,14 @@ function App() {
   url: "https://apod.nasa.gov/apod/image/1909/WolfsCaveCBMDMW1024.jpg"
   }
   const [image, setImage] = useState(defaultImg);
-  const [date, setDate] = useState(new Date(2019, 8, 9))
-  const apiKey = "LWqkJeogF0XlRhW24JU14v9sfWMelIH0BS97ldGZ"
+  const [date, setDate] = useState(new Date(2019, 8, 9));
+  const apiKey = "LWqkJeogF0XlRhW24JU14v9sfWMelIH0BS97ldGZ";
 
   useEffect(() => {
     async function getImage(dateObj) {
       const dateStr = date.toJSON().slice(0,10);
       try {
-        const apodObj = await axios.get(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${dateStr}`)
+        const apodObj = await axios.get(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${dateStr}`);
         console.log(apodObj);
         setImage(apodObj.data);
       } catch (err) {
@@ -32,18 +32,20 @@ function App() {
     getImage(date);
   }, [date])
 
-  const changeImage = (direction) => {
-    if (direction === "left") {
+  const dateHandler = (change) => {
+    if (change === "left") {
       setDate(new Date(date.getFullYear(), date.getMonth(), date.getDate() - 1));
-    } else if (direction === "right") {
+    } else if (change === "right") {
       setDate(new Date(date.getFullYear(), date.getMonth(), 1 + date.getDate()));
+    } else {
+      setDate(new Date(change.slice(0,4), parseInt(change.slice(5,7)), parseInt(change.slice(8,10))));
     }
   }
 
   return (
     <div className="App">
       <h1>Astronomy Photo Of The Day</h1>
-      <Carousel image={image} date={date.toJSON().slice(0,10)} func={changeImage}/>
+      <Carousel image={image} date={date.toJSON().slice(0,10)} func={dateHandler}/>
     </div>
   );
 }

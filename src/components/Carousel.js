@@ -9,7 +9,10 @@ export default function Carousel(props) {
         <button className="btn" onClick={() =>{
           return props.func("left")
         }}>&larr; Previous</button>
-        <span>{props.date}</span>
+        <input type="date" value={props.date} onChange={(event) => {
+          console.log(event.target.value.slice(0,4), event.target.value.slice(5,7))
+          return props.func(event.target.value);
+        }} />
         <button className="btn" onClick={() =>{
           return props.func("right")
         }}>Next &rarr;</button>
