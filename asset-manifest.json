@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/myapp/static/css/main.f17e7332.chunk.css",
-    "main.js": "/myapp/static/js/main.bf63d03d.chunk.js",
-    "main.js.map": "/myapp/static/js/main.bf63d03d.chunk.js.map",
-    "runtime~main.js": "/myapp/static/js/runtime~main.e4f53ea3.js",
-    "runtime~main.js.map": "/myapp/static/js/runtime~main.e4f53ea3.js.map",
-    "static/js/2.8e1dad3f.chunk.js": "/myapp/static/js/2.8e1dad3f.chunk.js",
-    "static/js/2.8e1dad3f.chunk.js.map": "/myapp/static/js/2.8e1dad3f.chunk.js.map",
-    "index.html": "/myapp/index.html",
-    "precache-manifest.fc6c190b25e18b331babfc6d63627a79.js": "/myapp/precache-manifest.fc6c190b25e18b331babfc6d63627a79.js",
-    "service-worker.js": "/myapp/service-worker.js",
-    "static/css/main.f17e7332.chunk.css.map": "/myapp/static/css/main.f17e7332.chunk.css.map"
+    "main.css": "/nasa-apod/static/css/main.f17e7332.chunk.css",
+    "main.js": "/nasa-apod/static/js/main.bf63d03d.chunk.js",
+    "main.js.map": "/nasa-apod/static/js/main.bf63d03d.chunk.js.map",
+    "runtime~main.js": "/nasa-apod/static/js/runtime~main.7a1dc3ce.js",
+    "runtime~main.js.map": "/nasa-apod/static/js/runtime~main.7a1dc3ce.js.map",
+    "static/js/2.8e1dad3f.chunk.js": "/nasa-apod/static/js/2.8e1dad3f.chunk.js",
+    "static/js/2.8e1dad3f.chunk.js.map": "/nasa-apod/static/js/2.8e1dad3f.chunk.js.map",
+    "index.html": "/nasa-apod/index.html",
+    "precache-manifest.a0f00eb39c01d8360a569008a827d202.js": "/nasa-apod/precache-manifest.a0f00eb39c01d8360a569008a827d202.js",
+    "service-worker.js": "/nasa-apod/service-worker.js",
+    "static/css/main.f17e7332.chunk.css.map": "/nasa-apod/static/css/main.f17e7332.chunk.css.map"
   }
 }
