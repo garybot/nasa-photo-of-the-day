@@ -37,7 +37,7 @@ function App() {
     } else if (change === "right") {
       setDate(new Date(date.getFullYear(), date.getMonth(), 1 + date.getDate()));
     } else {
-      setDate(new Date(change.slice(0,4), parseInt(change.slice(5,7)), parseInt(change.slice(8,10))));
+      setDate(new Date(change.slice(0,4), parseInt(change.slice(5,7)) - 1, parseInt(change.slice(8,10))));
     }
   }
 
