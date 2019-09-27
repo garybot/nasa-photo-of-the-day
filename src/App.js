@@ -5,15 +5,15 @@ import Carousel from "./components/Carousel.js";
 
 function App() {
   const defaultImg = {
-  copyright: "Charlie Bracken",
-  date: "2019-09-07",
-  explanation: "The mysterious blue reflection nebula found in catalogs as VdB 152 or Ced 201 really is very faint. It lies at the tip of the long dark nebula Barnard 175 in a dusty complex that has also been called Wolf's Cave. At the center of this deep and widefield telescopic view, the cosmic apparitions are nearly 1,400 light-years away along the northern Milky Way in the royal constellation Cepheus. Near the edge of a large molecular cloud, pockets of interstellar dust in the region block light from background stars or scatter light from the embedded bright star giving the the nebula its characteristic blue color. Ultraviolet light from the star is also thought to cause a dim reddish luminescence in the nebular dust. Though stars do form in molecular clouds, this star seems to have only accidentally wandered into the area, as its measured velocity through space is very different from the cloud's velocity. Another dense, obscuring dark nebula, LDN 1221, is easy to spot at the upper right in the frame, while the more colorful planetary nebula Dengel-Hartl 5 is just below center. Faint reddish emission from an ancient supernova remnant can also be traced (lower right to upper left) against the dust-rich complex in Cepheus.",
-  hdurl: "https://apod.nasa.gov/apod/image/1909/WolfsCaveCBMDMW.jpg",
-  media_type: "image",
-  service_version: "v1",
-  title: "In Wolf's Cave",
-  url: "https://apod.nasa.gov/apod/image/1909/WolfsCaveCBMDMW1024.jpg"
-  }
+    copyright: "Amir H. AbolfathTWAN",
+    date: "2019-09-09",
+    explanation: `How far can you see? The most distant object easily visible to the unaided eye is M31, the great Andromeda Galaxy, over two million light-years away. Without a telescope, even this immense spiral galaxy appears as an unremarkable, faint, nebulous cloud in the constellation Andromeda. But a bright yellow nucleus, dark winding dust lanes, luminous blue spiral arms, and bright red emission nebulas are recorded in this stunning six-hour telescopic digital mosaic of our closest major galactic neighbor. While even casual skygazers are now inspired by the knowledge that there are many distant galaxies like M31, astronomers seriously debated this fundamental concept only 100 years ago. Were these "spiral nebulae" simply outlying gas clouds in our own Milky Way Galaxy or were they "island universes" -- distant galaxies of stars comparable to the Milky Way itself? This question was central to the famous Shapley-Curtis debate of 1920, which was later resolved by observations favoring Andromeda being just like our Milky Way Galaxy -- a conclusion making the rest of the universe much more vast than many had ever imagined.`,
+    hdurl: "https://apod.nasa.gov/apod/image/1909/M31_Abolfath_3000.jpg",
+    media_type: "image",
+    service_version: "v1",
+    title: "M31: The Andromeda Galaxy",
+    url: "https://apod.nasa.gov/apod/image/1909/M31_Abolfath_960.jpg"
+}
   const [image, setImage] = useState(defaultImg);
   const [date, setDate] = useState(new Date(2019, 8, 9));
   const apiKey = "LWqkJeogF0XlRhW24JU14v9sfWMelIH0BS97ldGZ";
